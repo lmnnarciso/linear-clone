@@ -1,4 +1,5 @@
 import { Container } from "../components/Container";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Hero, HeroSubtitle, HeroTitle } from "../components/Hero";
 import "../styles/globals.css";
@@ -22,9 +23,7 @@ export default function RootLayout({
         <div>
           <Header />
           <main className="pt-[var(--navigation-height)]">{children}</main>
-          <footer>
-            <Container>footer linear</Container>
-          </footer>
+          <Footer />
         </div>
       </body>
     </html>
