@@ -65,13 +65,13 @@ export const Footer = () => {
         </div>
         <div className="flex flex-wrap">
           {footerLinks.map((column) => (
-            <div className="min-w-[18rem] mt-10 lg:mt-0">
+            <div className="min-w-[18rem] mt-10 lg:mt-0" key={column.title}>
               <h3 className="font-medium mb-3">{column.title}</h3>
               <ul>
                 {column.links.map((link) => (
-                  <li>
+                  <li key={link.title}>
                     <Link
-                      className="text-gray mb-3 block [&_a]:last:mb-0"
+                      className="text-gray mb-3 block [&_a]:last:mb-0 hover:text-white transition-colors"
                       href={link.href}
                     >
                       {link.title}
