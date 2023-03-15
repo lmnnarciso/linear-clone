@@ -9,7 +9,7 @@ export default function Page() {
           <Hero>
             <HeroTitle>
               Linear is a better way
-              <br />
+              <br className="hidden md:block" />
               to build products
             </HeroTitle>
             <HeroSubtitle>

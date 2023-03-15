@@ -49,14 +49,14 @@ const footerLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="mt-12 border-top border-white-a08 py-[5.6rem] text-sm">
-      <Container className="flex flex-col lg:flex-row justify-between ">
+    <footer className="border-top mt-12 border-transparent-white py-[5.6rem] text-md">
+      <Container className="flex flex-col justify-between lg:flex-row ">
         <div className="">
-          <div className="flex flex-row lg:flex-col justify-between h-full">
-            <div className="flex items-center text-gray">
-              <Logo className="w-4 h-4 mr-4" /> Linear - Designed worldwide
+          <div className="flex h-full flex-row justify-between lg:flex-col">
+            <div className="flex items-center text-grey">
+              <Logo className="mr-4 h-4 w-4" /> Linear - Designed worldwide
             </div>
-            <div className="mt-auto text-gray flex space-x-3">
+            <div className="mt-auto flex space-x-3 text-grey">
               <TwitterIcon />
               <GithubIcon />
               <SlackIcon />
@@ -65,13 +65,13 @@ export const Footer = () => {
         </div>
         <div className="flex flex-wrap">
           {footerLinks.map((column) => (
-            <div className="min-w-[18rem] mt-10 lg:mt-0" key={column.title}>
-              <h3 className="font-medium mb-3">{column.title}</h3>
+            <div className="mt-10 min-w-[18rem] lg:mt-0" key={column.title}>
+              <h3 className="mb-3 font-medium">{column.title}</h3>
               <ul>
                 {column.links.map((link) => (
                   <li key={link.title}>
                     <Link
-                      className="text-gray mb-3 block [&_a]:last:mb-0 hover:text-white transition-colors"
+                      className="mb-3 block text-grey transition-colors hover:text-white [&_a]:last:mb-0"
                       href={link.href}
                     >
                       {link.title}
