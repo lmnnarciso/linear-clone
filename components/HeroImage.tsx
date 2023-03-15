@@ -15,7 +15,14 @@ export const HeroImage = () => {
           inView && "before:animate-image-glow"
         )}
       >
-        <img className="relative z-10" src="/images/hero.webp" alt="hero" />
+        <img
+          className={classNames(
+            "relative z-10 opacity-0 transition-opacity delay-[680ms]",
+            inView ? "opacity-100" : "opacity-0"
+          )}
+          src="/images/hero.webp"
+          alt="hero"
+        />
       </div>
     </div>
   );
