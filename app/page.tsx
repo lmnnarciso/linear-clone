@@ -1,6 +1,7 @@
 import { Button, IconWrapper } from "../components/Button";
 import { Container } from "../components/Container";
 import { Hero, HeroSubtitle, HeroTitle } from "../components/Hero";
+import { ChevronIcon } from "../components/icons/chevron";
 
 export default function Page() {
   return (
@@ -20,7 +21,13 @@ export default function Page() {
               Meet the new standard for modern software development.
               <br /> Streamline issues, sprints, and product roadmaps.
             </HeroSubtitle>
-            <img src="/images/hero.webp" alt="hero" />
+            <Button href="/" variant="primary" size="large">
+              Get Started{" "}
+              <IconWrapper>
+                <ChevronIcon />
+              </IconWrapper>
+            </Button>
+            <img className="mt-[12.8rem]" src="/images/hero.webp" alt="hero" />
           </Hero>
         </Container>
       </main>
