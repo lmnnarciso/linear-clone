@@ -1,13 +1,14 @@
 import { Button, IconWrapper } from "../components/Button";
 import { Container } from "../components/Container";
 import { Hero, HeroSubtitle, HeroTitle } from "../components/Hero";
+import { HeroImage } from "../components/HeroImage";
 import { ChevronIcon } from "../components/icons/chevron";
 
 export default function Page() {
   return (
     <div>
       <main>
-        <Container className="pt-[6.4rem]">
+        <Container className="overflow-hidden pt-[6.4rem]">
           <Hero>
             <Button
               href="/"
@@ -37,7 +38,7 @@ export default function Page() {
                 <ChevronIcon />
               </IconWrapper>
             </Button>
-            <img className="mt-[12.8rem]" src="/images/hero.webp" alt="hero" />
+            <HeroImage />
           </Hero>
         </Container>
       </main>
