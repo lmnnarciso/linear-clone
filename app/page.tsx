@@ -1,3 +1,4 @@
+"use client";
 import { Button, IconWrapper } from "../components/Button";
 import { Container } from "../components/Container";
 import { Hero, HeroSubtitle, HeroTitle } from "../components/Hero";
