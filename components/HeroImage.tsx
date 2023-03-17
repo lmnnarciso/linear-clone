@@ -34,7 +34,7 @@ export const HeroImage = () => {
           ...lines,
           {
             direction: Math.random() > 0.5 ? "to bottom" : "to right",
-            duration: getRandomNumber(2000000, 4000000),
+            duration: getRandomNumber(2000, 4000),
             size: getRandomNumber(10, 30),
             id: Math.random().toString(),
           },
@@ -72,9 +72,9 @@ export const HeroImage = () => {
               className={classNames(
                 "absolute block bg-glow-lines",
                 line.direction === "to bottom" &&
-                  "top-0 right-0 h-[calc(var(--size)*1rem)] w-[1px] rotate-180 animate-glow-line-vertical",
+                  "top-0 right-0 h-[calc(var(--size)*1rem)] w-[1px] animate-glow-line-vertical",
                 line.direction === "to right" &&
-                  "top-0 left-0 h-[1px] w-[calc(var(--size)*1rem)] rotate-90 animate-glow-line-horizontal"
+                  "top-0 left-0 h-[1px] w-[calc(var(--size)*1rem)] animate-glow-line-horizontal"
               )}
             />
           ))}
